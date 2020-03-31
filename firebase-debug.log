@@ -1,0 +1,62 @@
+[debug] [2020-03-31T21:58:55.122Z] ----------------------------------------------------------------------
+[debug] [2020-03-31T21:58:55.123Z] Command:       /usr/local/Cellar/node/12.1.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-03-31T21:58:55.124Z] CLI Version:   7.16.1
+[debug] [2020-03-31T21:58:55.124Z] Platform:      darwin
+[debug] [2020-03-31T21:58:55.124Z] Node Version:  v12.1.0
+[debug] [2020-03-31T21:58:55.124Z] Time:          Tue Mar 31 2020 23:58:55 GMT+0200 (Central European Summer Time)
+[debug] [2020-03-31T21:58:55.124Z] ----------------------------------------------------------------------
+[debug] [2020-03-31T21:58:55.124Z] 
+[debug] [2020-03-31T21:58:55.131Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-31T21:58:55.131Z] > authorizing via signed-in user
+[debug] [2020-03-31T21:58:55.131Z] [iam] checking project demi-yang for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-03-31T21:58:55.133Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/demi-yang:testIamPermissions  
+
+[debug] [2020-03-31T21:58:58.005Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-31T21:58:58.008Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/demi-yang  
+ 
+[debug] [2020-03-31T21:58:58.884Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'demi-yang'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-03-31T21:58:58.888Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/demi-yang/versions  
+
+[debug] [2020-03-31T21:59:02.674Z] <<< HTTP RESPONSE 200
+[info] i  hosting[demi-yang]: beginning deploy...
+[info] i  hosting[demi-yang]: found 87 files in public
+[debug] [2020-03-31T21:59:02.697Z] [hosting] hash cache [cHVibGlj] not populated
+[debug] [2020-03-31T21:59:02.866Z] [hosting] hash cache [cHVibGlj] stored for 87 files
+[debug] [2020-03-31T21:59:02.866Z] [hosting][hash queue][FINAL]
+[debug] [2020-03-31T21:59:02.866Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/demi-yang/versions/6681cee59f15e690:populateFiles  
+ <request body omitted>
+[debug] [2020-03-31T21:59:04.928Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-31T21:59:04.959Z] [hosting][populate queue][FINAL]
+[debug] [2020-03-31T21:59:04.959Z] [hosting] uploads queued: 81
+[debug] [2020-03-31T21:59:16.318Z] [uploadQueue] Retrying task 349c82585434262d7f7f5cb0ab0dd91958b44e48e715f40f6a7b4add064bf988
+[debug] [2020-03-31T21:59:16.434Z] [uploadQueue] Retrying task a4e0584efa5cb4e4d42c9ee2e3b754e77d768a9cca3e50b3b73cddddf42525b9
+[debug] [2020-03-31T21:59:16.626Z] [uploadQueue] Retrying task a061eb3587478d8a3f1e66b75c473167171b826becf5b6dce6461f070603b9f8
+[debug] [2020-03-31T21:59:16.657Z] [uploadQueue] Retrying task 97c1443549fc42071ae2772be0b336b91dd083c83c46d5793fd1f4e2edb37100
+[debug] [2020-03-31T21:59:16.772Z] [uploadQueue] Retrying task 31aea7f663f7212d03f202b5cf7cf92b7acff3b20c19a0b87c272dfafe25d8d8
+[debug] [2020-03-31T21:59:17.898Z] [uploadQueue] Retrying task 81a9f4c967a4ac368d278b0c5c3b8956c88ce41f22dbea60ce8f965a6ade9f41
+[debug] [2020-03-31T21:59:23.156Z] [uploadQueue] Retrying task 048d284479ac1039d95b4e50b2d163ff7e5836b8360e7447697a286fba85728b
+[debug] [2020-03-31T21:59:23.474Z] [uploadQueue] Retrying task 72503b01e46da21ec82ecb00e6d3531555aa6fae98e43d1487ac4237911bdff6
+[debug] [2020-03-31T21:59:23.475Z] [uploadQueue] Retrying task 51e9459e5a6e94efbd01e36a05cae50a5b523b6776f67731374e6f7d763f8c20
+[debug] [2020-03-31T21:59:23.476Z] [uploadQueue] Retrying task 43232083da2b748e583eb0925445876f5adcbfe15f88650fecc0ce0573cabad0
+[debug] [2020-03-31T21:59:23.476Z] [uploadQueue] Retrying task 48bbd0fcc284248569b3b3586e96980b8da2e4eaec54046e2aea64e9ae6be3e5
+[debug] [2020-03-31T21:59:23.477Z] [uploadQueue] Retrying task adaa5f7aa70e0a7f0a22e156cf23dca7011554ef14e7ed1eecfea22deded543c
+[debug] [2020-03-31T21:59:23.639Z] [uploadQueue] Retrying task ad61f7ca172d267ac9b317a2c64d63132a83d6d3abeba0977538a179a46145e9
+[debug] [2020-03-31T21:59:24.505Z] [uploadQueue] Retrying task a98e1c65e82816e17a53c1ecfca9a955ecabbecb3f75c0da5199c8e351c17467
+[debug] [2020-03-31T21:59:24.643Z] [uploadQueue] Retrying task 9db30733e4122d70e3a1f5cf05a3fc4999e55c2159c41092feb9d5aeb2c5028c
+[debug] [2020-03-31T21:59:26.496Z] [uploadQueue] Retrying task 76825205ced044ee9109a824e559c0a2281256bef745fc7f175af0e9cbb605bf
+[debug] [2020-03-31T21:59:26.664Z] [uploadQueue] Retrying task 64b1d46cf75df24eedc9062ec36e17497573a69bda0989f44746583e493cc8c9
+[debug] [2020-03-31T21:59:30.195Z] [uploadQueue] Retrying task 500a7be36ba9c37b4234c2472f4b980a2c3c8ef7a642a3f807a2b3fb6e01fe28
+[debug] [2020-03-31T21:59:31.191Z] [uploadQueue] Retrying task c5dcb5839a6a192442fce970db21fbf911579bee9bd70650b17138477a4b8e30
+[debug] [2020-03-31T21:59:32.230Z] [uploadQueue] Retrying task 000a0da34937808979cb857ce330727bab17e12db34279b8dbf8b8a1511499bf
+[debug] [2020-03-31T21:59:36.560Z] [uploadQueue] Retrying task 6648d157d53e9e7fe292b287c6818f5f9555a99f7c98e9f69d6c09535f2a0f1f
+[debug] [2020-03-31T21:59:36.676Z] [uploadQueue] Retrying task 22eb8d2bedd2b4cc09e6b1bb314e77fe5c876c9a3e3d8ec22c89dfea11a94835
+[debug] [2020-03-31T21:59:37.153Z] [uploadQueue] Retrying task a39b725de6ddacb342300179292ba738484f03e156cc6ebcb8b6bea99df29d31
+[debug] [2020-03-31T21:59:38.480Z] [uploadQueue] Retrying task 714b204b8930638c1d3e39f97802c85ed8ef20617076aeebabd02b8513c07ee3
+[debug] [2020-03-31T21:59:38.596Z] [uploadQueue] Retrying task 2bc15626f92d8ac2da62eb59336afb60203c6d0c093035647fad67b83014b77b
+[debug] [2020-03-31T21:59:43.512Z] [uploadQueue] Retrying task 74107b51c7c1ae959b11124cde0a13b5b5c789da1c3c1d602b79c418b523296f
+[debug] [2020-03-31T21:59:43.772Z] [uploadQueue] Retrying task 2ffb2e1e6b31674037803553237e57a9e6cbe81958799297822c1a3e53dd00dd
+[debug] [2020-03-31T21:59:47.860Z] [uploadQueue] Retrying task a45021c4e710345064718c9bd023c2004423a9469a698218bd1f8eca1933689b
